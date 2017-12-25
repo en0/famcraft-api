@@ -1,0 +1,21 @@
+{
+  "name": "famcraft-api",
+  "version": "1.0.0",
+  "description": "API to control the family minecraft server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-watch": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ian Laird <irlaird@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.175.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.3"
+  }
+}

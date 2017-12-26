@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
 const AWS = require('aws-sdk');
@@ -12,6 +13,7 @@ if (!INST) {
 
 const ec2 = new AWS.EC2({ region: "us-west-2" });
 
+app.use(cors());
 app.use(bodyParser.json({ type: 'application/json' }));
 
 app.get('/instance', (req, res) => {
